@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MISSUBIBI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff0e6;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #d35400;
+    }
+    p {
+      font-size: 18px;
+    }
+    ul {
+      list-style-type: square;
+      text-align: left;
+      display: inline-block;
+    }
+    #musubiContent {
+      display: none;
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+    function checkPassword() {
+      let password = prompt("Enter password to view MUSUBI:");
+      if(password === "PAMABY") {
+        document.getElementById("musubiContent").style.display = "block";
+      } else {
+        document.body.innerHTML = "<h1>ALAMIN MO MUNA PASSWORD BAGO KA PUMASOK</h1>";
+      }
+    }
+  </script>
+</head>
+<body onload="checkPassword()">
+
+  <h1>MISSUBIBI</h1>
+
+  <div id="musubiContent">
+    <h2>MUSUBI</h2>
+    <p>A musubi (also known as onigiri) is a traditional Japanese snack or light meal. It's a triangular-shaped rice ball, often filled with various ingredients such as:</p>
+    <p><strong>INGREDIENTS:</strong></p>
+    <ul>
+      <li>SALMON</li>
+      <li>SPAM</li>
+      <li>RICE</li>
+      <li>NORI</li>
+      <li>EGG</li>
+    </ul>
+  </div>
+
+</body>
+</html>
